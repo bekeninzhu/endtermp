@@ -1,0 +1,75 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="theme-color" content="#0c1023">
+  <meta name="description" content="Skill Swap is a free student community for exchanging knowledge. Discover offers, find a match and share what you know.">
+  <title>Skill Swap — Your next skill starts here</title>
+  <link rel="icon" href="images/favicon.svg" type="image/svg+xml">
+  <link rel="stylesheet" href="vendor/bootstrap.min.css">
+  <link rel="stylesheet" href="css/style.css">
+  <script defer src="vendor/bootstrap.bundle.min.js"></script>
+  <script defer src="vendor/jquery.min.js"></script>
+  <script defer src="js/data.js"></script>
+  <script defer src="js/main.js"></script>
+</head>
+<body data-page="home">
+  <a class="skip-link" href="#main">Skip to content</a>
+  <div class="ambient ambient-a" aria-hidden="true"></div>
+  <div class="ambient ambient-b" aria-hidden="true"></div>
+  <header class="site-header">
+    <nav class="navbar navbar-expand-md" aria-label="Main navigation">
+      <div class="container shell">
+        <a class="navbar-brand brand" href="index.html" aria-label="Skill Swap home"><span class="brand-mark" aria-hidden="true">↗<span>↙</span></span><span>skill<span class="brand-em">swap</span><span class="brand-dot">.</span></span></a>
+        <button class="navbar-toggler nav-toggle" type="button" data-bs-toggle="collapse" data-bs-target="#siteMenu" aria-controls="siteMenu" aria-expanded="false" aria-label="Toggle navigation"><span class="navbar-toggler-icon"></span></button>
+        <div class="collapse navbar-collapse" id="siteMenu">
+          <ul class="navbar-nav ms-auto align-items-md-center nav-links">
+            <li class="nav-item"><a class="nav-link active" aria-current="page" href="index.html">Explore</a></li>
+            <li class="nav-item"><a class="nav-link" href="#how-it-works">How it works</a></li>
+            <li class="nav-item"><a class="nav-link nav-join" href="join.html">Join the community <span aria-hidden="true">↗</span></a></li>
+          </ul>
+        </div>
+      </div>
+    </nav>
+  </header>
+  <main id="main">
+    <section class="hero shell container" aria-labelledby="heroTitle">
+      <div class="hero-content">
+        <div class="eyebrow"><span class="pulse-dot"></span> THE STUDENT SKILL EXCHANGE <span class="eyebrow-divider">/</span> 100% FREE</div>
+        <h1 id="heroTitle">Your next skill<br>is one <em>swap</em> away<span class="hero-period">.</span></h1>
+        <p class="hero-description">Teach what you know. Learn what you love. Meet students who believe the best things in life are meant to be shared.</p>
+        <div class="hero-actions"><a href="#discover" class="button button-lime" data-scroll="discover">Find your skill <span aria-hidden="true">↗</span></a><a href="join.html" class="button button-outline">Share a skill <span aria-hidden="true">↗</span></a></div>
+        <div class="hero-metrics" aria-label="Community example statistics"><div><strong id="statOffers">12</strong><span>student offers</span></div><div><strong id="statSkills">12</strong><span>skills to explore</span></div><div><strong>0 ₸</strong><span>to get started</span></div></div>
+      </div>
+      <div class="hero-art" aria-label="Illustration of skills connected through a swap">
+        <div class="space-halo halo-one" aria-hidden="true"></div><div class="space-halo halo-two" aria-hidden="true"></div>
+        <div class="art-star star-one" aria-hidden="true">✳</div><div class="art-star star-two" aria-hidden="true">✦</div>
+        <div class="orbit orbit-outer" aria-hidden="true"></div><div class="orbit orbit-inner" aria-hidden="true"></div>
+        <div class="core-ring"><span class="core-words">GIVE <span>↔</span> GET</span><span class="core-symbol" aria-hidden="true">↗↙</span><span class="core-sub">SKILL EXCHANGE</span></div>
+        <div class="art-mini mini-top"><span class="mini-icon mini-purple" aria-hidden="true">✧</span><span><small>YOU TEACH</small><strong>UX design</strong></span></div>
+        <div class="art-mini mini-bottom"><span class="mini-icon mini-lime" aria-hidden="true">⌘</span><span><small>YOU LEARN</small><strong>Python basics</strong></span></div>
+        <div class="art-badge"><span aria-hidden="true">✦</span> PERFECT MATCH!</div>
+      </div>
+    </section>
+    <div class="marquee-wrap" aria-label="Exchangeable skills"><div class="marquee-track" aria-hidden="true"><span>DESIGN <b>✳</b> CODE <b>✳</b> LANGUAGES <b>✳</b> MUSIC <b>✳</b> CREATIVITY <b>✳</b> CONFIDENCE <b>✳</b> DESIGN <b>✳</b> CODE <b>✳</b> LANGUAGES <b>✳</b> MUSIC <b>✳</b> CREATIVITY <b>✳</b> CONFIDENCE <b>✳</b></span></div></div>
+    <section class="discover section-pad" id="discover" aria-labelledby="discoverTitle">
+      <div class="container shell">
+        <div class="section-head"><div><p class="section-kicker"><span>01</span> THE DISCOVERY ZONE</p><h2 id="discoverTitle">Find your <span class="text-lime">people.</span><br>Find your thing.</h2><p class="section-description">A little knowledge can go a long way. Browse student-made offers and find a new learning partner.</p></div><div class="count-display"><strong id="visibleCount">12</strong><span>offers waiting<br>to be discovered</span></div></div>
+        <div class="search-panel">
+          <div class="search-bar"><label class="search-icon" for="searchInput" aria-label="Search">⌕</label><input id="searchInput" type="search" class="search-control" placeholder="Search a skill, name, or interest..." autocomplete="off"><button type="button" class="clear-search" id="clearSearch" aria-label="Clear search" hidden>×</button></div>
+          <div class="filter-toolbar"><div class="filter-chips" role="group" aria-label="Filter by category" id="filterChips"><button type="button" class="chip active" data-category="All" aria-pressed="true">All skills</button><button type="button" class="chip" data-category="Design" aria-pressed="false">Design</button><button type="button" class="chip" data-category="Coding" aria-pressed="false">Coding</button><button type="button" class="chip" data-category="Languages" aria-pressed="false">Languages</button><button type="button" class="chip" data-category="Creative" aria-pressed="false">Creative</button><button type="button" class="chip" data-category="Academic" aria-pressed="false">Academic</button></div><div class="sort-group"><label for="sortSelect">Sort</label><select id="sortSelect" class="sort-select"><option value="featured">Featured</option><option value="az">Name A–Z</option><option value="za">Name Z–A</option></select><button type="button" class="saved-filter" id="savedFilter" aria-pressed="false"><span aria-hidden="true">♡</span> Saved <span class="save-counter" id="savedCount">0</span></button></div></div>
+        </div>
+        <div id="offersGrid" class="offers-grid" aria-live="polite" aria-label="Skill offers"></div>
+        <div class="empty-state" id="emptyState" hidden><span class="empty-illustration" aria-hidden="true">⌕</span><h3>No swaps found ... yet</h3><p>Try another search, change your category, or browse all skills.</p><button class="button button-outline" id="resetFilters" type="button">Show all offers <span aria-hidden="true">↗</span></button></div>
+        <div class="load-row"><button class="button button-outline" type="button" id="loadMore">Show more offers <span aria-hidden="true">↓</span></button></div>
+      </div>
+    </section>
+    <section class="matcher-section section-pad" id="matcher" aria-labelledby="matcherTitle"><div class="container shell"><div class="matcher-card"><div class="matcher-copy"><p class="section-kicker"><span>02</span> THE MATCH LAB</p><h2 id="matcherTitle">Two skills.<br><span class="text-lime">One connection.</span></h2><p>Enter what you can teach and what you want to learn. Our mini match finder looks for a mutual swap.</p><div class="match-scribble" aria-hidden="true">Your skill ↗ their skill ✳</div></div><div class="matcher-form-wrap"><form id="matchForm" novalidate><div class="mb-3"><label class="form-label" for="myTeach">I can teach...</label><select class="form-select glass-input" id="myTeach" required><option value="">Pick your skill</option></select></div><div class="mb-3"><label class="form-label" for="myLearn">I want to learn...</label><select class="form-select glass-input" id="myLearn" required><option value="">Pick your next skill</option></select></div><p class="field-error" id="matchError" role="alert" hidden>Please choose two different skills.</p><button class="button button-lime w-100" type="submit">Find my matches <span aria-hidden="true">↗</span></button></form><div id="matchResult" class="match-result" aria-live="polite" hidden></div></div></div></div></section>
+    <section class="steps section-pad" id="how-it-works" aria-labelledby="stepsTitle"><div class="container shell"><p class="section-kicker"><span>03</span> EASY AS ONE, TWO, SWAP</p><div class="steps-heading"><h2 id="stepsTitle">Learning is better<br><span class="text-lime">together.</span></h2><p>No classes to buy, no complicated setup. Just people helping people.</p></div><div class="steps-grid"><article class="step-card"><div class="step-top"><span class="step-number">01 /</span><span class="step-icon" aria-hidden="true">⌕</span></div><h3>Find your fit</h3><p>Search offers, filter interests, and discover students with skills you want.</p></article><article class="step-card"><div class="step-top"><span class="step-number">02 /</span><span class="step-icon" aria-hidden="true">↗</span></div><h3>Offer your thing</h3><p>Tell the community what you can teach and the skill you want in return.</p></article><article class="step-card"><div class="step-top"><span class="step-number">03 /</span><span class="step-icon" aria-hidden="true">✳</span></div><h3>Grow together</h3><p>Meet on campus and exchange knowledge, ideas, and new connections.</p></article></div></div></section>
+    <section class="faq-section section-pad" aria-labelledby="faqTitle"><div class="container shell faq-layout"><div><p class="section-kicker"><span>04</span> GOOD QUESTIONS</p><h2 id="faqTitle">Wait, how<br>does it <span class="text-lime">work?</span></h2><p class="section-description">A few things you might want to know before your first swap.</p></div><div class="faq-list"><div class="faq-item"><button class="faq-question" type="button" aria-expanded="false" aria-controls="faq1">Is Skill Swap really free? <span aria-hidden="true">+</span></button><div class="faq-answer" id="faq1" hidden><p>Yes! This is a student project built around trading knowledge, not money. No payment is needed.</p></div></div><div class="faq-item"><button class="faq-question" type="button" aria-expanded="false" aria-controls="faq2">Does submitting the form contact a student? <span aria-hidden="true">+</span></button><div class="faq-answer" id="faq2" hidden><p>Not yet. This frontend demo saves your public skill offer in this browser only. It does not send emails or messages.</p></div></div><div class="faq-item"><button class="faq-question" type="button" aria-expanded="false" aria-controls="faq3">What if I am a beginner? <span aria-hidden="true">+</span></button><div class="faq-answer" id="faq3" hidden><p>That's okay. You can choose your current level when you join. Everyone has something useful to share.</p></div></div></div></div></section>
+    <section class="cta-section"><div class="container shell"><div class="cta-panel"><div class="cta-spark" aria-hidden="true">✳</div><p class="cta-kicker">YOUR KNOWLEDGE IS YOUR SUPERPOWER</p><h2>Give a little.<br><em>Gain a lot.</em></h2><a class="button button-dark" href="join.html">Start swapping <span aria-hidden="true">↗</span></a></div></div></section>
+  </main>
+  <footer class="site-footer" id="credits"><div class="container shell"><div class="footer-main"><div><a href="index.html" class="brand footer-brand"><span class="brand-mark" aria-hidden="true">↗<span>↙</span></span><span>skill<span class="brand-em">swap</span><span class="brand-dot">.</span></span></a><p>Made for curious minds, by a curious mind.</p></div><div class="footer-links"><a href="index.html#discover">Explore offers</a><a href="join.html">Join community</a><a href="#how-it-works">How it works</a></div></div><div class="footer-bottom"><span>© 2026 Skill Swap · Web Technologies 1 · Beken Inzhu</span><span>Credits: Original HTML/CSS/JS design with AI assistance; Bootstrap 5.3.6 (MIT), jQuery (MIT). No external photos or templates.</span></div></div></footer>
+</body>
+</html>
